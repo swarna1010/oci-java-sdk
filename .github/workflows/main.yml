@@ -22,6 +22,6 @@ jobs:
       
       # Runs a single command using the runners shell
       - name: Install packages
-        run: sudo pip install boman-cli
+        run: sudo pip install boman-cli --upgrade
       - name: Run scan  
-        run: sudo boman-cli -a run
+        run: sudo boman-cli -a run -u https://devapi.boman.ai/v2/
